@@ -8,6 +8,7 @@ class StockListApiView(generics.ListCreateAPIView):
     queryset= Stock.objects.all()
     serializer_class = StockSerializer
     
+    
 
 class StockDetailUpdateApiView(generics.RetrieveUpdateAPIView):
     queryset = Stock.objects.all()

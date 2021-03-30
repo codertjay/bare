@@ -4,5 +4,5 @@ from django.db import models
 class Stock(models.Model):
     name = models.CharField(max_length=50)
     price = models.IntegerField()
-    timestamp = models.DateField( auto_now_add=True)
-    last_update = models.DateField(  auto_now_add=True)
+    created_date = models.DateTimeField(auto_now=True)
+    last_update = models.DateTimeField(auto_now=True)
