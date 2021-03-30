@@ -6,7 +6,7 @@ def get_smallest_positive_number(list_item):
     sort_list =sorted(list_item)
     
     try:
-        if list.count(small_number) > 1:
+        if list_item.count(small_number) > 1:
             for x in sort_list:
                 try:
                     if sort_list.count(x) == 1:
