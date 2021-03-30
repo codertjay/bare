@@ -2,6 +2,9 @@ from .models import Stock
 from rest_framework.serializers import ModelSerializer
 from datetime import datetime
 
+
+
+
 class StockSerializer(ModelSerializer):
     class Meta:
         model = Stock
